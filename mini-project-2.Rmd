@@ -45,7 +45,6 @@ Begin by loading your data and the tidyverse package below:
 ```{r, message = FALSE}
 library(datateachr)
 library(tidyverse)
-
 ```
 
 # Task 1: Process and summarize your data 
@@ -202,7 +201,7 @@ Be sure to explain your reasoning for this task. Show us the "before" and "after
 
 cancer_sample_untidy <- cancer_sample %>%
   pivot_longer(
-    cols = -c(ID, diagnosis),     # use all other columns
+    cols = -c(ID, diagnosis),
     names_to = "measurement",
     values_to = "value"
   )

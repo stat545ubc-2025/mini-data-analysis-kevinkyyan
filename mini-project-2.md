@@ -275,7 +275,7 @@ and “after”.
 ``` r
 cancer_sample_untidy <- cancer_sample %>%
   pivot_longer(
-    cols = -c(ID, diagnosis),     # use all other columns
+    cols = -c(ID, diagnosis),
     names_to = "measurement",
     values_to = "value"
   )
